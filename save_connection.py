@@ -4,13 +4,13 @@ Connection class for insert,update ,delete and select
 functions for metadata management
 """
 import sqlite3
-from .settings import *
+from .settings import DATABASES
 from utility.logger import log
 import os 
 
 class Connections():
     def __init__(self):
-        self.connection = sqlite3.connect(os.path.join(DATABASES, 'db.sqllite3'))	
+        self.connection = sqlite3.connect((DATABASES ['Guid.db']))	
     def createTable(self):
         try:
             with self.connection:
