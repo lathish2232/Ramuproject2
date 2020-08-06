@@ -8,9 +8,13 @@ To connect database for python package
 
 
 
+
+
 packages required to run app.py(use pip to install)
 1. flask
 2.flask_cors
 3.lask_restplus
 4.pyyaml
-5.pip install Werkzeug==0.16.1
+5.pip install Werkzeug==0.16.1(Werkzeug  version 1.16 have issue go with version 0.16.1)
+6.Requests   --pip install requests
+7.xlrd  --pip install xlrd(To extract data from excel sheets)
